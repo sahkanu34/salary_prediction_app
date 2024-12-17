@@ -35,6 +35,7 @@ cd salary-prediction-app
 1. Build the Docker Image
 ```bash
 docker build -t salary-prediction-app .
+docker image ls
 ```
 2. Run the container
 ```bash
