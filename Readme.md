@@ -18,11 +18,20 @@ This is a Machine Learning web application that predicts salary based on various
 ## Prerequisites
 - Python 3.8+
 - pip
-- Docker (optional)
+- Docker
 
 ## Installation
 ```bash
 pip install -r requirements.txt
+```
+
+## Pull the Image from my Dockerhub
+```bash
+docker pull sahkanu37/salary_prediction
+```
+## Go to my Dockerhub Account
+```bash
+https://hub.docker.com/r/sahkanu37/salary_prediction
 ```
 
 ### Local Setup
