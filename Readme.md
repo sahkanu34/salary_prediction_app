@@ -1,12 +1,9 @@
 # Salary Prediction App (Supervised Learning Project)
-# Machine Learning model using Random Forest Regressor
 
 <img src="https://github.com/sahkanu34/salary_prediction_app/blob/main/app.png">
 
 # The app is already been deployed
-```bash
-https://salaryprediction34.streamlit.app/
-```
+[Open Live Project](https://salarypredictionapp34.streamlit.app/)
 
 # Project Overview
 This is a Machine Learning web application that predicts salary based on various professional attributes using Random Forest Regression. The application leverages supervised learning techniques to provide accurate salary estimates.
