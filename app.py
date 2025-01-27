@@ -194,14 +194,17 @@ def main():
             # Show confidence interval
             confidence = 0.95
             predictions = []
+            X_test_array = X_test.values  # Convert DataFrame to numpy array
             for _ in range(100):
-                idx = np.random.randint(0, len(X_test), size=10)
-                pred = model.predict(X_test[idx]).mean()
+                # Generate random indices
+                idx = np.random.randint(0, len(X_test_array), size=10)
+                # Use the numpy array for prediction
+                pred = model.predict(scaler.transform(X_test_array[idx])).mean()
                 predictions.append(pred)
             
-            lower = np.percentile(predictions, (1-confidence)*100/2)
-            upper = np.percentile(predictions, 100-(1-confidence)*100/2)
-            st.write(f'95% Confidence Interval: ${lower:,.2f} to ${upper:,.2f}')
+            # lower = np.percentile(predictions, (1-confidence)*100/2)
+            # upper = np.percentile(predictions, 100-(1-confidence)*100/2)
+            # st.write(f'95% Confidence Interval: ${lower:,.2f} to ${upper:,.2f}')
 
 if __name__ == '__main__':
     main()
