@@ -1,8 +1,9 @@
 # Salary Prediction App (Supervised Learning Project)
-# Machine Learning model using Random Forest Regressor
 
 <img src="https://github.com/sahkanu34/salary_prediction_app/blob/main/app.png">
 
+# The app is already been deployed
+[Open Live Project](https://salarypredictionapp34.streamlit.app/)
 
 # Project Overview
 This is a Machine Learning web application that predicts salary based on various professional attributes using Random Forest Regression. The application leverages supervised learning techniques to provide accurate salary estimates.
@@ -18,11 +19,20 @@ This is a Machine Learning web application that predicts salary based on various
 ## Prerequisites
 - Python 3.8+
 - pip
-- Docker (optional)
+- Docker
 
 ## Installation
 ```bash
 pip install -r requirements.txt
+```
+
+## Pull the Image from my Dockerhub
+```bash
+docker pull sahkanu37/salary_prediction
+```
+## Go to my Dockerhub Account
+```bash
+https://hub.docker.com/r/sahkanu37/salary_prediction
 ```
 
 ### Local Setup
@@ -35,6 +45,7 @@ cd salary-prediction-app
 1. Build the Docker Image
 ```bash
 docker build -t salary-prediction-app .
+docker image ls
 ```
 2. Run the container
 ```bash
